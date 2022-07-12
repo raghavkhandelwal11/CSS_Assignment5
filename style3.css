@@ -1,6 +1,9 @@
 body {
     background-image: url(./sky.jpg);
     z-index: 0;
+    border-left: 10px solid  rgb(255, 123, 0);
+    border-right: 10px solid  green;
+    margin: 0;
 }
 
 .head1 {
@@ -42,7 +45,7 @@ body {
 .city {
     position: block;
     /* bottom: 40px; */
-    width: 200%;
+    width: 100%;
     height: 200px;
     background-image: url(./city.png);
     background-repeat: repeat;
@@ -52,32 +55,32 @@ body {
 
 @keyframes city1 {
     from {
-        transform: translate(0);
+        background-position-x: 50vw;
     }
 
     to {
-        transform: translate(-600px);
+        background-position-x: 0vw;
     }
 }
 
 .road {
     position: block;
-    width: 200vw;
+    width: 100%;
     height: 350px;
     margin-top: 0;
     background-image: url(./road.jpg);
     background-repeat: repeat;
-    animation: linear road2 3s infinite;
+    animation: linear road2 2s infinite;
     
 }
 
 @keyframes road2 {
     from {
-        transform: translate(0);
+        background-position-x: 70vw;
     }
 
     to {
-        transform: translate(-1200px);
+        background-position-x: 0px;
     }
 }
 
